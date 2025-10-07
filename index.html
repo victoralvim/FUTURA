@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VitralSign - Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration-2"></div>
+    <header class="header">
+      <h1 class="logo">FUTURA</h1>
+    </header>
+    <div class="main-wrapper">
+      <main class="main-content">
+        <div class="glass-container">
+          <div class="content-wrapper">
+            <div class="hero-section">
+              <h2 class="main-title">Bem-vindo ao Futuro</h2>
+              <p class="subtitle">
+                Conecte-se conosco através de uma experiência única e
+                transparente
+              </p>
+            </div>
+            <form class="signup-form" id="signupForm" novalidate>
+              <div class="form-group">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input"
+                  required
+                  autocomplete="name"
+                />
+                <span class="error-message" id="nome-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  required
+                  autocomplete="email"
+                />
+                <span class="error-message" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senha" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  id="senha"
+                  name="senha"
+                  class="form-input"
+                  required
+                  autocomplete="new-password"
+                />
+                <span class="error-message" id="senha-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="confirmar_senha" class="form-label"
+                  >Confirmar Senha</label
+                >
+                <input
+                  type="password"
+                  id="confirmar_senha"
+                  name="confirmar_senha"
+                  class="form-input"
+                  required
+                  autocomplete="new-password"
+                />
+                <span class="error-message" id="confirmar_senha-error"></span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                  <span class="btn-text">Cadastrar-se</span>
+                </button>
+              </div>
+
+              <div class="success-message hidden" id="success-message">
+                ✓ Cadastro realizado com sucesso!
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
